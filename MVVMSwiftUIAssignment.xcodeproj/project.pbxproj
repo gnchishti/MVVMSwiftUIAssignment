@@ -7,18 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C22447812881075E00D2FA34 /* DetailedContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C22447802881075E00D2FA34 /* DetailedContentView.swift */; };
 		C2AB587728808889002FE338 /* MVVMSwiftUIAssignmentApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB587628808889002FE338 /* MVVMSwiftUIAssignmentApp.swift */; };
 		C2AB587928808889002FE338 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB587828808889002FE338 /* ContentView.swift */; };
 		C2AB587B2880888A002FE338 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2AB587A2880888A002FE338 /* Assets.xcassets */; };
 		C2AB587E2880888A002FE338 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C2AB587D2880888A002FE338 /* Preview Assets.xcassets */; };
+		C2AB5886288089AF002FE338 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB5885288089AF002FE338 /* Models.swift */; };
+		C2AB588828808DD3002FE338 /* TransportNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB588728808DD3002FE338 /* TransportNetwork.swift */; };
+		C2AB588B2880988A002FE338 /* TransportViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2AB588A2880988A002FE338 /* TransportViewModel.swift */; };
+		C2BB3E962881D6850091E513 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BB3E952881D6850091E513 /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C22447802881075E00D2FA34 /* DetailedContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedContentView.swift; sourceTree = "<group>"; };
 		C2AB587328808889002FE338 /* MVVMSwiftUIAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVMSwiftUIAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C2AB587628808889002FE338 /* MVVMSwiftUIAssignmentApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSwiftUIAssignmentApp.swift; sourceTree = "<group>"; };
 		C2AB587828808889002FE338 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C2AB587A2880888A002FE338 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C2AB587D2880888A002FE338 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		C2AB5885288089AF002FE338 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		C2AB588728808DD3002FE338 /* TransportNetwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportNetwork.swift; sourceTree = "<group>"; };
+		C2AB588A2880988A002FE338 /* TransportViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransportViewModel.swift; sourceTree = "<group>"; };
+		C2AB588D28809EAD002FE338 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		C2BB3E952881D6850091E513 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +62,13 @@
 		C2AB587528808889002FE338 /* MVVMSwiftUIAssignment */ = {
 			isa = PBXGroup;
 			children = (
+				C2BB3E942881D66F0091E513 /* Helpers */,
+				C2BB3E932881D62A0091E513 /* Views */,
+				C2AB588C28809898002FE338 /* ViewModels */,
+				C2AB588928808DFE002FE338 /* Network */,
+				C2AB5884288088DD002FE338 /* Models */,
 				C2AB587628808889002FE338 /* MVVMSwiftUIAssignmentApp.swift */,
-				C2AB587828808889002FE338 /* ContentView.swift */,
+				C2AB588D28809EAD002FE338 /* Info.plist */,
 				C2AB587A2880888A002FE338 /* Assets.xcassets */,
 				C2AB587C2880888A002FE338 /* Preview Content */,
 			);
@@ -65,6 +81,47 @@
 				C2AB587D2880888A002FE338 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		C2AB5884288088DD002FE338 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB5885288089AF002FE338 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		C2AB588928808DFE002FE338 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB588728808DD3002FE338 /* TransportNetwork.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		C2AB588C28809898002FE338 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB588A2880988A002FE338 /* TransportViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		C2BB3E932881D62A0091E513 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				C2AB587828808889002FE338 /* ContentView.swift */,
+				C22447802881075E00D2FA34 /* DetailedContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		C2BB3E942881D66F0091E513 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				C2BB3E952881D6850091E513 /* LocationManager.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,6 +194,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C2AB588828808DD3002FE338 /* TransportNetwork.swift in Sources */,
+				C2AB5886288089AF002FE338 /* Models.swift in Sources */,
+				C22447812881075E00D2FA34 /* DetailedContentView.swift in Sources */,
+				C2BB3E962881D6850091E513 /* LocationManager.swift in Sources */,
+				C2AB588B2880988A002FE338 /* TransportViewModel.swift in Sources */,
 				C2AB587928808889002FE338 /* ContentView.swift in Sources */,
 				C2AB587728808889002FE338 /* MVVMSwiftUIAssignmentApp.swift in Sources */,
 			);
@@ -269,6 +331,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MVVMSwiftUIAssignment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVVMSwiftUIAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -297,6 +360,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"MVVMSwiftUIAssignment/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MVVMSwiftUIAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
