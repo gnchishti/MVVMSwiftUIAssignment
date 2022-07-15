@@ -22,7 +22,7 @@ struct ContentView: View {
                         Text("\(feature.properties.label)!")
                             .font(.largeTitle)
                             .fontWeight(.bold)
-                        Text("600m Bike station")
+                        Text("600m Bike station")// I am skipping distance calculation as it was optional
                             .foregroundColor(.gray)
                         Spacer()
                         Spacer()
@@ -60,17 +60,12 @@ struct ContentView: View {
                 
             }
         }
-        
-        
-        
-        
         .overlay {
             if viewModel.isFetching {
                 ProgressView("Fetching data, please wait...")
                     .progressViewStyle(CircularProgressViewStyle(tint: .accentColor))
             }
         }
-        
         .animation(.default, value: viewModel.features)
         .task {
             await viewModel.fetchData()

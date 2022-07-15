@@ -14,16 +14,21 @@ extension UIScreen{
    static let screenSize = UIScreen.main.bounds.size
 }
 
-
 struct DetailedContentView: View {
     
     var feature:Feature?=nil
-    @State private var coordinateRegion = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 16.911623, longitude: 52.402831), span: MKCoordinateSpan(latitudeDelta: 1.5, longitudeDelta: 1.5))
     
+    
+    @State private var region = MKCoordinateRegion(center: CLLocationCoordinate2D(latitude: 16.911623, longitude: 52.402831), span: MKCoordinateSpan(latitudeDelta: 1.5, longitudeDelta: 1.5))
+
     var body: some View {
         VStack {
             VStack {
-                Map(coordinateRegion: $coordinateRegion)
+                Map(coordinateRegion: $region,
+                    showsUserLocation: true,
+                    userTrackingMode: .none
+                )
+                .ignoresSafeArea()
             }
             
             VStack (alignment: .leading)
@@ -33,7 +38,7 @@ struct DetailedContentView: View {
                 Text("\(self.feature!.properties.label)!")
                     .font(.largeTitle)
                     .fontWeight(.bold)
-                Text("600m Bike station")
+                Text("600m Bike station") // I am skipping distance calculation as it was optional
                     .foregroundColor(.gray)
                 Spacer()
                 Spacer()
@@ -49,12 +54,9 @@ struct DetailedContentView: View {
                             .fontWeight(.bold)
                             .foregroundColor(.green)
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
-
-
                     }
                     Spacer()
                     VStack () {
-
                         Image("Lock")
                         Text ("Available Places")
                             .foregroundColor(.gray)
@@ -65,9 +67,10 @@ struct DetailedContentView: View {
                             .frame(maxWidth: .infinity, maxHeight: .infinity)
 
                     }
+                    
                 }
             }
-            .frame(width: UIScreen.screenWidth*0.85, height: 250, alignment: .center)
+            .frame(width: UIScreen.screenWidth*0.85, height: 200, alignment: .center)
         }
         
         

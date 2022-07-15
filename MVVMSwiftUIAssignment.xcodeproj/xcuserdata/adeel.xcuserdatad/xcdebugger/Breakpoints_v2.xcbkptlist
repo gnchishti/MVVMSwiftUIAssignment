@@ -3,4 +3,70 @@
    uuid = "C6F674BE-B45E-4B4C-892F-ABD3FDC67066"
    type = "1"
    version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "60751E6E-8932-4547-A91E-C39C7E86E258"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSwiftUIAssignment/Network/TransportNetwork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "getData(handler:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A341E12-AEB7-46BB-A36B-FE646A64599F"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "MVVMSwiftUIAssignment/Network/TransportNetwork.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "getData(handler:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "9A341E12-AEB7-46BB-A36B-FE646A64599F - c06a44ce34b1bb77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MVVMSwiftUIAssignment.TransportNetwork.getData(handler: (MVVMSwiftUIAssignment.ApplicationData) -&gt; ()) -&gt; ()"
+                  moduleName = "MVVMSwiftUIAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gnc/Projects/XCode/MVVMSwiftUIAssignment/MVVMSwiftUIAssignment/Network/TransportNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "219">
+               </Location>
+               <Location
+                  uuid = "9A341E12-AEB7-46BB-A36B-FE646A64599F - c06a44ce34b1bb77"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in MVVMSwiftUIAssignment.TransportNetwork.getData(handler: (MVVMSwiftUIAssignment.ApplicationData) -&gt; ()) -&gt; ()"
+                  moduleName = "MVVMSwiftUIAssignment"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/gnc/Projects/XCode/MVVMSwiftUIAssignment/MVVMSwiftUIAssignment/Network/TransportNetwork.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "303">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
 </Bucket>

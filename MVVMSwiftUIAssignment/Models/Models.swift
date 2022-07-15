@@ -6,7 +6,7 @@
 //
 
 import Foundation
-
+import MapKit
 
 struct ApplicationData : Codable, Equatable {
     let features: [Feature]
@@ -24,6 +24,7 @@ struct CRSProperty : Codable, Equatable {
 }
 
 struct Feature: Codable, Equatable, Identifiable, Hashable {
+    
     let id : String
     let type: String
     let properties:FeatureProperty
@@ -32,6 +33,7 @@ struct Feature: Codable, Equatable, Identifiable, Hashable {
     func hash(into hasher: inout Hasher) {
         
     }
+    
 }
 
 struct FeatureGeometry: Codable, Equatable {
